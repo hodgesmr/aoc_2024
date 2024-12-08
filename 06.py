@@ -128,7 +128,7 @@ def part_2(input_lines):
         y = step[1]
 
         if (
-            (x, y) != unobstructed_guard.start
+            (x, y) != (unobstructed_guard.start[0], unobstructed_guard.start[1])
             and (x, y) not in tried
             and new_map[y][x] != "#"
         ):
